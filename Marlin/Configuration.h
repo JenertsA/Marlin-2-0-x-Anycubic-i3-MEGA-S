@@ -1105,7 +1105,7 @@
 #endif
 
 #if ENABLED(KNUTWURST_MEGA_S)
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 393 }
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 384 } //E-setps set to 384 as per default firmware
 #endif
 
 #if ENABLED(KNUTWURST_MEGA_X)
