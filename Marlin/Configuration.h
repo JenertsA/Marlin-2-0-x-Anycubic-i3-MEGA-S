@@ -1047,8 +1047,8 @@
   #define E0_DRIVER_TYPE TMC2208_STANDALONE
   #define E1_DRIVER_TYPE TMC2208_STANDALONE
 #else
-  #define X_DRIVER_TYPE  A4988
-  #define Y_DRIVER_TYPE  A4988
+  #define X_DRIVER_TYPE  TMC2130_STANDALONE
+  #define Y_DRIVER_TYPE  TMC2130_STANDALONE
   #define Z_DRIVER_TYPE  A4988
   #define E0_DRIVER_TYPE A4988
   #define E1_DRIVER_TYPE A4988
@@ -1668,8 +1668,8 @@
 #if DISABLED(KNUTWURST_TMC)
   #if ANY(KNUTWURST_MEGA, KNUTWURST_MEGA_S, KNUTWURST_MEGA_X)
     // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-    #define INVERT_X_DIR true // set to true for stock drivers or TMC2208 with reversed connectors
-    #define INVERT_Y_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
+    #define INVERT_X_DIR false // set to true for stock drivers or TMC2208 with reversed connectors 
+    #define INVERT_Y_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
     #define INVERT_Z_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
 
     // @section extruder
